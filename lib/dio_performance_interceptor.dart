@@ -5,7 +5,7 @@ import 'package:firebase_performance/firebase_performance.dart';
 import 'package:performance_interceptor/utils.dart';
 
 class DioPerformanceInterceptor implements InterceptorsWrapper {
-  HttpMetric metric;
+  late HttpMetric metric;
 
   @override
   Future onRequest(RequestOptions options) async {
@@ -32,7 +32,7 @@ class DioPerformanceInterceptor implements InterceptorsWrapper {
   Future<void> _setResponse(Response response) async {
     try {
       metric.responseContentType =
-          response.headers.map[HttpHeaders.contentTypeHeader].first;
+          response.headers.map[HttpHeaders.contentTypeHeader]!.first;
     } catch (_) {}
     metric.httpResponseCode = response.statusCode;
     await metric.stop();

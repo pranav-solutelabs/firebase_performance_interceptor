@@ -5,15 +5,15 @@ author:
 homepage:
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  firebase_performance: ^0.3.1+5
+  firebase_performance: ^0.6.0
 
-  http_interceptor: ^0.1.1
-  dio: ^3.0.8
+  http_interceptor: ^0.3.3
+  dio: ^3.0.10
 
 dev_dependencies:
   flutter_test:
