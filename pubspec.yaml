@@ -10,10 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_performance: ^0.6.0
+  firebase_performance: any
 
-  http_interceptor: ^0.3.3
-  dio: ^3.0.10
+  http_interceptor: any
+  dio: any
 
 dev_dependencies:
   flutter_test:
